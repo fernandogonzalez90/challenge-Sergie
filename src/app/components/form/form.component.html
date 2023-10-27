@@ -1,0 +1,63 @@
+<div class="container mt-3 p-4 bg-light border shadow">
+    <h2 class="text-secondary">1° Form</h2>
+    <label class="text-secondary mb-3">En los campos <b>Telefono</b> y <b>Fecha</b> se utiliza <b>NGX-MASK</b></label>
+    <form [formGroup]="formulario" (ngSubmit)="enviar()">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="nombre"><i class="fa-solid fa-address-card"></i></span>
+            <input formControlName="nombre" type="text" class="form-control" placeholder="nombre" aria-label="Nombre">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="apellido"><i class="fa-regular fa-address-card"></i></span>
+            <input formControlName="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="email">@</span>
+            <input formControlName="email" type="email" class="form-control" placeholder="Email" aria-label="Email">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="telefono"><i class="fa-solid fa-mobile-screen"></i></span>
+            <input mask="(000) 000-0000"  formControlName="telefono" type="text" class="form-control" placeholder="Telefono" aria-label="Telefono">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="direccion"><i class="fa-solid fa-location-dot"></i></span>
+            <input formControlName="direccion" type="text" class="form-control" placeholder="Direccion" aria-label="Direccion">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="fecha"><i class="fa-solid fa-calendar-days"></i></span>
+            <input formControlName="fecha" mask="d0/M0/0000" type="text" class="form-control" placeholder="dd/mm/aaaa" aria-label="Fecha">
+          </div>
+          <button type="submit" class="btn btn-outline-secondary px-5">ENVIAR <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title" id="exampleModalLabel">Datos del Forumlario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Contenido del modal -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Nombre:</b> {{datoFormulario?.nombre}}</li>
+              <li class="list-group-item"><b>Apellido:</b> {{datoFormulario?.apellido}}</li>
+              <li class="list-group-item"><b>Email:</b> {{datoFormulario?.email}}</li>
+              <li class="list-group-item"><b>Telefono:</b> {{datoFormulario?.telefono}}</li>
+              <li class="list-group-item"><b>Direccion:</b> {{datoFormulario?.direccion}}</li>
+              <li class="list-group-item"><b>Fecha:</b> {{datoFormulario?.fecha | date:'shortDate'}}</li>
+            </ul>
+          </div>
+          <div class="modal-footer bg-light">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+</div>

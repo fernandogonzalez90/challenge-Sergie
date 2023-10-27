@@ -1,0 +1,34 @@
+Te propongo un challenge en Angular para que veas como te manejás con algunas de las dificultades que necesita el puesto:
+
+1) Iniciar un proyecto desde cero con ANGULAR 16 (usar Angular CLI)
+
+2) Hacer una navegación mínima, por lo menos 3 vistas
+
+3) a)En una vista hacer un formulario con 5 campos que en en dos campos se use la librería: NGX-MASK (teléfono (XXX) XXXX-XXXX y otro campo a elección)
+    
+    b) Ese formulario al tocar ENVIAR que abra una modal donde se muestren los datos que escribiste en el formulario (podés usar tailwind, bootstrap, material, lo que quieras para la modal)
+
+4) a)Para la segunda vista: Instalar y utilizar la librería IGNITE UI para hacer una Tabla (usá la GRID que es como un excel que te permite filtrar y ordenar)
+    Link al feature: https://www.infragistics.com/products/ignite-ui-angular/angular/components/grid/excel-style-filtering
+   
+   b) Hacer un mock (datos falsos para rellenar la tabla, puede ser lo que quieras incluso el ejemplo que suele traer la tabla) 
+
+5) a) Para la tercera vista: que haya checkboxes o combo-selectores que tengan varias opciones (con 3 opciones está bien)
+   
+   b) Al seleccionar la opción 1 que se muestre un formulario (condicionalmente), si selecciono la opción 2 que se muestre otro y así sucesivamente.
+   
+   c) Se valorará uso de observables y signals para la manipulación de la vista
+
+Podés bajarte un ejemplo de IGNITE UI para copiar la estructura desde:
+Descarga proyecto prototipo
+Documentación
+
+En lo posible intentá usar SIGNALS (Angular 16) para manejar las variables y componentizar la tabla. 
+
+Se valorarán animaciones, diseño, y si es responsive.
+Tendría que estar para el viernes, puede ser subido a Netlify o Github Pages, y necesitaría el repositorio subido para poder verlo. 
+
+Desde ya muchas gracias
+
+Saludos,
+Sergie Code
