@@ -21,6 +21,8 @@ import {
 } from 'igniteui-angular';
 // Directive para evitar scroll
 import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
+import { ChallengeComponent } from './components/challenge/challenge.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const maskConfig: Partial<IConfig> = {
   validation: false,
@@ -34,6 +36,8 @@ const maskConfig: Partial<IConfig> = {
     FormComponent,
     CheckboxesComponent,
     IgniteUiComponent,
+    ChallengeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

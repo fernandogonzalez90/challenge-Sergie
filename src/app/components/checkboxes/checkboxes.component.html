@@ -1,1 +1,24 @@
-<p>checkboxes works!</p>
+<div class="container-fluid mt-3">
+  <select
+    class="form-select mb-3"
+    [(ngModel)]="selectedOption"
+    (change)="changeSelect()"
+  >
+    <option *ngFor="let option of options" [value]="option">
+      {{ option }}
+    </option>
+  </select>
+</div>
+
+<app-form *ngIf="selectedOption === 'Form 1°'"></app-form>
+<app-ignite-ui *ngIf="selectedOption === 'IgniteUi'"></app-ignite-ui>
+
+
+<div class="ratio ratio-16x9">
+    <iframe
+    class="p-3 rounded"
+    *ngIf="selectedOption === 'Sopresa'"
+    src="https://www.youtube.com/embed/N8Xt5rP_DUo?si=4hHpB-BP7dqQQNP7"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  ></iframe>
+  </div>

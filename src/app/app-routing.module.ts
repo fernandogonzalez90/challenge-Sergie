@@ -3,8 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
 import { IgniteUiComponent } from './components/ignite-ui/ignite-ui.component';
 import { CheckboxesComponent } from './components/checkboxes/checkboxes.component';
+import { ChallengeComponent } from './components/challenge/challenge.component';
 
 const routes: Routes = [
+  {
+    path: '', component: ChallengeComponent
+  },
   {
     path: 'form', component: FormComponent
   },
@@ -12,7 +16,7 @@ const routes: Routes = [
     path: 'igniteui', component: IgniteUiComponent
   },
   {
-    path: 'checkboxes', component: CheckboxesComponent
+    path: 'selects', component: CheckboxesComponent
   }
 ];
 

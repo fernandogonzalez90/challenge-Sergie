@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { IgxGridComponent } from 'igniteui-angular';
-import { DATA } from '../data/nwindData';
+import { DATA } from 'src/app/data/nwindData';
 
 @Component({
   selector: 'app-ignite-ui',
