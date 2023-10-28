@@ -7,7 +7,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./checkboxes.component.css']
 })
 export class CheckboxesComponent {
-  options = ['Form 1°', 'IgniteUi', 'Sopresa'];
+  options = ['Form 1°', 'IgniteUi', 'Sorpresa'];
   selectedOption = this.options[0];
   videoUrl = 'https://www.youtube.com/watch?v=N8Xt5rP_DUo&t=13070s';
   safeUrl: SafeResourceUrl;
